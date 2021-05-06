@@ -30,7 +30,7 @@ class CommentsController extends Controller
 	}
 
 	public function index(){
-		return view('comments',[
+		return view('blogs.comments.index',[
 			'comments'=>Comment::where('parent_id',null)->with('replies')->orderBy('posted_at','desc')->get(),
 		]);
 	}

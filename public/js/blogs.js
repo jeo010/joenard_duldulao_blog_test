@@ -38,7 +38,7 @@ $(document).ready(function(){
 					//alert(response.status)
 					$(".comment_form").html("");
 					generateCommentsForm(0,"",0);
-					$("#comment_section").load(location.href + " #comment_section");
+					$("#comment_section").load("/blogs/comments");
 				},
 				error: function (response) {
 					//alert(response.responseJSON.errors);
